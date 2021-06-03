@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>SmartNinja Weather</h1>
+
+<p>Location: {{ data.name }}</p>
+
+<p>Current weather: {{ data.weather[0].description }}</p>
+
+<p>Temperature: {{ data.main.temp }} &#xb0;C</p>
+
+<img class="weather-icon" src="http://openweathermap.org/img/wn/{{ data.weather[0].icon}}@2x.png" alt="{{ data.weather[0].icon}}">
+
+</body>
+</html>
